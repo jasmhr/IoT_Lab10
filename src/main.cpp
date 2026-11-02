@@ -65,7 +65,7 @@ void onButtonBPressed() {
 void alarmOff() { 
   // 1. Remember that the alarm is no longer on: 
   //    set the variable alarmOn to false. 
-  bool alarmOn = false;
+  alarmOn = false;
   // 2. Turn the red LED off. 
   //    (Common Commands: "Turn an Output On / Off" – use RED_LED and LOW) 
   digitalWrite(RED_LED, LOW);
@@ -77,7 +77,7 @@ void alarmOff() {
 // It is called by onTouchDetected() when the wire is touched while armed. 
 void startAlarm() { 
   // 1. Remember that the alarm is on: set alarmOn to true. 
-  bool alarmOn = true;
+  alarmOn = true;
   // 2. Start the timer: save the time now in the variable alarmStart. 
   //    (Common Commands: "Save the Time Now") 
   //    The // Timer code in loop() compares millis() with alarmStart 
